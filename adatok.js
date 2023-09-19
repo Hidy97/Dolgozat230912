@@ -11,6 +11,7 @@ export const TODOLIST = [
 ];
 export const TODOLIST2 = [
     {
+        //id:1,
         tevekenyseg: "szakdolgozat specifikáció elkészítése",
         hatarido: "2023.10.15",
     },

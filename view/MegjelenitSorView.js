@@ -1,9 +1,10 @@
 class MegjelenitSor {
     //ez, a táblázat egy sorát jelenti
     #adat = {};
-    constructor(adat, szuloElem) {
+    constructor(adat, szuloElem, index) {
         this.#adat = adat;
         this.tablaElem = szuloElem;
+        this.index = index;
         //console.log(this.tablaElem);
         this.#sor();
         this.sorElem = this.tablaElem.children("tr:last-child");
@@ -43,7 +44,7 @@ class MegjelenitSor {
     }
 
     #esemenyTrigger(esemenynev){
-        const esemenyem = new CustomEvent(esemenynev, {detail: this});
+        const esemenyem = new CustomEvent(esemenynev, {detail: this.adat});
         window.dispatchEvent(esemenyem);
     }
 }

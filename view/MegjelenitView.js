@@ -1,5 +1,4 @@
 import MegjelenitSor from "./MegjelenitSorView.js";
-import Urlap from "./UrlapView.js";
 
 class Megjelenit {
     #list = [];
@@ -26,8 +25,8 @@ class Megjelenit {
 
     tablazatbaIr2() {
         let txt = "";
-        this.#list.forEach((elem) => {
-            new MegjelenitSor(elem, this.tablaElem)
+        this.#list.forEach((elem, index) => {
+            new MegjelenitSor(elem, this.tablaElem, index)
             //az objektumokból jelenítsd meg a táblázatban az összes kulcsot
             // minden sorvan legyen egy töröl, és egy kész gomb
             // a kész gombra kattintva a vonatkozó tevékenység színe legyen zöld
