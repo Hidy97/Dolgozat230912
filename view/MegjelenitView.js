@@ -1,5 +1,5 @@
-import MegjelenitSor from "./MegjelenitSor.js";
-import Urlap from "./Urlap.js";
+import MegjelenitSor from "./MegjelenitSorView.js";
+import Urlap from "./UrlapView.js";
 
 class Megjelenit {
     #list = [];
