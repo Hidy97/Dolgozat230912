@@ -4,7 +4,7 @@ class MegjelenitSor {
     constructor(adat, szuloElem) {
         this.#adat = adat;
         this.tablaElem = szuloElem;
-        console.log(this.tablaElem);
+        //console.log(this.tablaElem);
         this.#sor();
         this.sorElem = this.tablaElem.children("tr:last-child");
 
@@ -14,18 +14,18 @@ class MegjelenitSor {
         this.megseGomb = this.sorElem.children("td").children(".megse");
 
         this.pipaGomb.on("click", () => {
-            console.log(this);
+            //console.log(this);
             this.sorElem.css("background-color", "teal");
         });
 
         this.torolGomb.on("click", () => {
-            console.log(this);
+            //console.log(this);
             //this.sorElem.empty(this);
             this.#esemenyTrigger("torles");
         });
 
         this.megseGomb.on("click", () => {
-            console.log(this);
+            //console.log(this);
             this.sorElem.css("background-color", "white");
         });
     }

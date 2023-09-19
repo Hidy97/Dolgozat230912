@@ -1,4 +1,5 @@
 import MegjelenitSor from "./MegjelenitSor.js";
+import Urlap from "./Urlap.js";
 
 class Megjelenit {
     #list = [];
@@ -6,14 +7,10 @@ class Megjelenit {
         this.#list = list;
         szuloElem.append(`<table class="table table-bordered table-striped">`);
         this.tablaElem = szuloElem.children("table");
-        console.log(this.tablaElem);
+        //console.log(this.tablaElem);
         //this.tablazatbaIr();
         this.tablazatbaIr2();
 
-        $(window).on("torles", (event) => {
-            console.log(event.detail)
-
-        });
     }
 
 
